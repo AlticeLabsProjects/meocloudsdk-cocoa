@@ -1,0 +1,107 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+@import Foundation;
+
+#if TARGET_OS_IPHONE
+@import UIKit;
+#else
+@import Cocoa;
+#endif
+
+// System version
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+#define CLD_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define CLD_SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define CLD_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define CLD_SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define CLD_SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+#endif
+
+// Logging
+#ifdef DEBUG
+static BOOL CLD_DEBUG_LOGGING = YES;
+#   define CLDLog(...) CLD_DEBUG_LOGGING ? NSLog(@"%s %@", __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__]) : nil
+#else
+#   define CLDLog(...) /* */
+#endif
+
+// Localization
+#define CLDLocalizedString(string) NSLocalizedStringFromTableInBundle(string, nil, [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"MEOCloudSDK" ofType:@"bundle"]], @"")
+
+// enum
+#define CLDPrintableEnum(ENUM_NAME, ENUM_TYPE, ENUM_VALUES...) \
+\
+typedef NS_ENUM(ENUM_TYPE, ENUM_NAME) {\
+ENUM_VALUES \
+}; \
+\
+\
+\
+_Pragma("clang diagnostic push");\
+_Pragma("clang diagnostic ignored \"-Wunused-function\"");\
+static NSString * ENUM_NAME##ToString(ENUM_TYPE enumValue) { \
+static NSString *enumDescription = @"" #ENUM_VALUES;  \
+/*parse the enum values into a dict*/\
+static NSDictionary *enumsByValue = nil; \
+if (enumsByValue == nil) { \
+NSMutableDictionary *mutableEnumsByValue = [NSMutableDictionary dictionary]; \
+NSArray *enumPairs = [enumDescription componentsSeparatedByString:@","]; \
+\
+NSInteger lastValue = 0-1; /*set to 1 before the default value for the first enum*/ \
+for (NSString *enumPair in enumPairs) { \
+NSArray *labelAndValue = [enumPair componentsSeparatedByString:@"="]; \
+NSString *label = [[labelAndValue objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]]; \
+BOOL hasExplictValue = [labelAndValue count] > 1; \
+NSInteger value = (hasExplictValue) ? [[labelAndValue objectAtIndex:1] integerValue] : lastValue + 1; \
+\
+[mutableEnumsByValue setObject:label forKey:[NSNumber numberWithInteger:value]]; \
+\
+lastValue = value; \
+} \
+\
+enumsByValue = [mutableEnumsByValue copy]; \
+} \
+\
+NSString *label = [enumsByValue objectForKey:[NSNumber numberWithInteger:enumValue]]; \
+if (label != nil) return label; \
+\
+return [NSString stringWithFormat:@"%li not defined as a %s value", (long)enumValue, #ENUM_NAME]; \
+}\
+_Pragma("clang diagnostic pop");
+
+// blocks
+#define RunBlock(block, ...) block ? block(__VA_ARGS__) : nil
+#define RunBlockOnMainThread(block, ...) block ? dispatch_async(dispatch_get_main_queue(), ^{block(__VA_ARGS__);}) : nil
+#define RunBlockOnBackground(block, ...) block ? dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{block(__VA_ARGS__);}) : nil
+#define RunBlockSynchronouslyOnMainThread(block, ...) block ? dispatch_sync(dispatch_get_main_queue(), ^{block(__VA_ARGS__);}) : nil
+#define RunBlockSynchronouslyOnBackground(block, ...) block ? dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{block(__VA_ARGS__);}) : nil
+
+// private categories
+#import "NSDateFormatter+CLDAdditions.h"
+#import "NSCondition+CLDAdditions.h"
+
+// private classes
+#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
+#import "CLDDrawables.h"
+#endif
+
+#import "CLDError.h"
+#import "CLDTransferOperation.h"
+#import "CLDUtil.h"
+
+// private headers
+#import "CLDLink+Private.h"
+#import "CLDItem+Private.h"
+#import "CLDTransfer+Private.h"
+#import "CLDTransferManager+Private.h"
+#import "CLDSession+Private.h"
+#import "CLDSharedFolder+Private.h"
+#import "CLDSharedFolderUser+Private.h"
+#import "CLDUser+Private.h"
+
+#endif

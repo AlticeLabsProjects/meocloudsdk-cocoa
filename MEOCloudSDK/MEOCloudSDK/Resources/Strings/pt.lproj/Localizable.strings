@@ -1,0 +1,31 @@
+/*
+ CLDErrors.strings
+ MEOCloudSDK
+ 
+ Created by Hugo Sousa on 26/03/14.
+ 
+ */
+
+"Error" = "Erro";
+"file" = "arquivo";
+"folder" = "pasta";
+"item" = "item";
+"That file" = "Esse arquivo";
+"That folder" = "Essa pasta";
+"CLDErrorCodeUnknownError" = "Erro desconhecido.";
+"CLDErrorCodeUnauthorized" = "Não tem autorização para executar essa operação.";
+"CLDErrorCodeAccessForbidden" = "Não tem permissão para executar essa operação.";
+"CLDErrorCodeInvalidResponse" = "O servidor devolveu uma resposta inválida.";
+"CLDErrorCodeTooManyRecords" = "Excesso de arquivos.";
+"CLDErrorCodeOverQuota" = "Não tem espaço livre na sua conta.";
+"CLDErrorCodeResourceNotFound" = "Item não encontrado.";
+"CLDErrorCodeResourceAlreadyExists" = "%@ já existe."; //ex. That file already exists.
+"CLDErrorCodeSessionNotLinked" = "Utilizador não autenticado.";
+"CLDErrorCodeSessionAlreadyLinked" = "Utilizador já se encontra autenticado.";
+"CLDErrorCodeMissingWindow" = "Não foi possível encontrar uma janela disponível.";
+"CLDErrorCodeConnectionTimedOut" = "A conexão excedeu o tempo limite.";
+"CLDErrorCodeConnectionFailed" = "Não foi possível estabelecer conexão com o servidor.";
+"CLDErrorCodeServerCouldNotCreateThumbnail" = "Não foi possível gerar pré-visualização do arquivo.";
+"CLDErrorCodeInvalidItem" = "Arquivo não é válido para transferências.";
+"CLDErrorCodeInvalidParameters" = "Foram enviados parâmetros inválidos ao servidor.";
+"CLDErrorCancelledByUser" = "Operação cancelada pelo usuário.";

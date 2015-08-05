@@ -1,0 +1,1129 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		56761FA319631C4E00255541 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 56761FAB19631C4E00255541 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				56761FA919631C4E00255541 /* Create Documentation */,
+				56761FAA19631C4E00255541 /* Copy Documentation */,
+			);
+			dependencies = (
+				56761FAF19631C5E00255541 /* PBXTargetDependency */,
+			);
+			name = Documentation;
+			productName = Framework;
+		};
+		56CC1E3218D1D0CD00027025 /* Framework (iOS 7) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 56CC1E3318D1D0CD00027025 /* Build configuration list for PBXAggregateTarget "Framework (iOS 7)" */;
+			buildPhases = (
+				56CC1E3618D1D0DE00027025 /* Build Framework for all platforms */,
+				56CC1E4D18D206CF00027025 /* Copy Framework */,
+			);
+			dependencies = (
+				56F3128219D31C1600A85ED7 /* PBXTargetDependency */,
+				56CC1E3818D1D30600027025 /* PBXTargetDependency */,
+			);
+			name = "Framework (iOS 7)";
+			productName = Framework;
+		};
+		7EF26C541B71004D00E05D5D /* Framework (OS X) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7EF26C5B1B71004D00E05D5D /* Build configuration list for PBXAggregateTarget "Framework (OS X)" */;
+			buildPhases = (
+				7EF26C5A1B71004D00E05D5D /* Copy Framework */,
+			);
+			dependencies = (
+				7EF26C601B71007100E05D5D /* PBXTargetDependency */,
+			);
+			name = "Framework (OS X)";
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		560D941219D3880A003E72BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560D941419D3880A003E72BF /* Localizable.strings */; };
+		561045BE18E079800076657F /* CLDSession+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045BC18E079800076657F /* CLDSession+Private.h */; };
+		561045C118E07A640076657F /* CLDAuthCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045BF18E07A640076657F /* CLDAuthCredential.h */; };
+		561045C218E07A640076657F /* CLDAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 561045C018E07A640076657F /* CLDAuthCredential.m */; };
+		561045C518E0AE090076657F /* CLDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045C318E0AE090076657F /* CLDError.h */; };
+		561045C618E0AE090076657F /* CLDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 561045C418E0AE090076657F /* CLDError.m */; };
+		5611816019659E75002C6347 /* NSDateFormatter+CLDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5611815E19659E75002C6347 /* NSDateFormatter+CLDAdditions.h */; };
+		5611816119659E75002C6347 /* NSDateFormatter+CLDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611815F19659E75002C6347 /* NSDateFormatter+CLDAdditions.m */; };
+		562671C619643CEB004F7BC1 /* CLDItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 562671C519643CEB004F7BC1 /* CLDItem+Private.h */; };
+		563FD02F19673D30006E3772 /* CLDLink+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD02E19673CAD006E3772 /* CLDLink+Private.h */; };
+		563FD032196AAEFD006E3772 /* CLDSharedFolder+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD030196AAE0A006E3772 /* CLDSharedFolder+Private.h */; };
+		563FD033196AAF00006E3772 /* CLDSharedFolderUser+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD031196AAE3D006E3772 /* CLDSharedFolderUser+Private.h */; };
+		5652A6F818F5D24100A8176F /* CLDUser+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5652A6F618F5CF0C00A8176F /* CLDUser+Private.h */; };
+		5652A6FD18F5D73C00A8176F /* CLDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5652A6FB18F5D73C00A8176F /* CLDUtil.h */; };
+		5652A6FE18F5D73C00A8176F /* CLDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652A6FC18F5D73C00A8176F /* CLDUtil.m */; };
+		5652A70818F614DF00A8176F /* CLDLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5652A70618F614DF00A8176F /* CLDLoginViewController.h */; };
+		5652A70918F614DF00A8176F /* CLDLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652A70718F614DF00A8176F /* CLDLoginViewController.m */; };
+		5689A5B5199A2C1B00F1590A /* NSCondition+CLDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5689A5B3199A2C1B00F1590A /* NSCondition+CLDAdditions.h */; };
+		5689A5B6199A2C1B00F1590A /* NSCondition+CLDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689A5B4199A2C1B00F1590A /* NSCondition+CLDAdditions.m */; };
+		56BEE154197683610016685B /* CLDTransfer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE153197683610016685B /* CLDTransfer+Private.h */; };
+		56BEE15719768A590016685B /* CLDTransferOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE15519768A590016685B /* CLDTransferOperation.h */; };
+		56BEE15819768A590016685B /* CLDTransferOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BEE15619768A590016685B /* CLDTransferOperation.m */; };
+		56BEE1611976C23A0016685B /* CLDSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE15F1976C23A0016685B /* CLDSessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56BEE1621976C23A0016685B /* CLDSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BEE1601976C23A0016685B /* CLDSessionConfiguration.m */; };
+		56C01F191973E60A00899FD7 /* CLDTransferManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C01F181973E5E400899FD7 /* CLDTransferManager+Private.h */; };
+		56C25A4018D756DA00359A6E /* CLDSharedFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A3E18D756DA00359A6E /* CLDSharedFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C25A4118D756DA00359A6E /* CLDSharedFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A3F18D756DA00359A6E /* CLDSharedFolder.m */; };
+		56C25A4418D75F5C00359A6E /* CLDSharedFolderUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A4218D75F5C00359A6E /* CLDSharedFolderUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C25A4518D75F5C00359A6E /* CLDSharedFolderUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A4318D75F5C00359A6E /* CLDSharedFolderUser.m */; };
+		56C25A4818D7618000359A6E /* CLDAccountUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A4618D7618000359A6E /* CLDAccountUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56C25A4918D7618000359A6E /* CLDAccountUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A4718D7618000359A6E /* CLDAccountUser.m */; };
+		56CC1E2218D1CAF900027025 /* MEOCloudSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E1D18D1C9CD00027025 /* MEOCloudSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E5C18D2171B00027025 /* CLDItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5018D2171B00027025 /* CLDItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E5E18D2171B00027025 /* CLDLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5218D2171B00027025 /* CLDLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E5F18D2171B00027025 /* CLDLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5318D2171B00027025 /* CLDLink.m */; };
+		56CC1E6018D2171B00027025 /* CLDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5418D2171B00027025 /* CLDSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E6118D2171B00027025 /* CLDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5518D2171B00027025 /* CLDSession.m */; };
+		56CC1E6218D2171B00027025 /* CLDTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5618D2171B00027025 /* CLDTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E6318D2171B00027025 /* CLDTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5718D2171B00027025 /* CLDTransfer.m */; };
+		56CC1E6418D2171B00027025 /* CLDTransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5818D2171B00027025 /* CLDTransferManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E6518D2171B00027025 /* CLDTransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5918D2171B00027025 /* CLDTransferManager.m */; };
+		56CC1E6618D2171B00027025 /* CLDUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5A18D2171B00027025 /* CLDUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56CC1E6718D2171B00027025 /* CLDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5B18D2171B00027025 /* CLDUser.m */; };
+		56CC1E6818D2172C00027025 /* CLDItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5118D2171B00027025 /* CLDItem.m */; };
+		56D31C60199D18EB007692CF /* CLDDrawables.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D31C5E199D18EB007692CF /* CLDDrawables.h */; };
+		56D31C61199D18EB007692CF /* CLDDrawables.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D31C5F199D18EB007692CF /* CLDDrawables.m */; };
+		7EF26BCC1B70C82200E05D5D /* NSDateFormatter+CLDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5611815E19659E75002C6347 /* NSDateFormatter+CLDAdditions.h */; };
+		7EF26BCD1B70C82500E05D5D /* NSDateFormatter+CLDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5611815F19659E75002C6347 /* NSDateFormatter+CLDAdditions.m */; };
+		7EF26BCE1B70C82900E05D5D /* NSCondition+CLDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5689A5B3199A2C1B00F1590A /* NSCondition+CLDAdditions.h */; };
+		7EF26BCF1B70C82D00E05D5D /* NSCondition+CLDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5689A5B4199A2C1B00F1590A /* NSCondition+CLDAdditions.m */; };
+		7EF26BD01B70C83900E05D5D /* CLDAuthCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045BF18E07A640076657F /* CLDAuthCredential.h */; };
+		7EF26BD11B70C83C00E05D5D /* CLDAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = 561045C018E07A640076657F /* CLDAuthCredential.m */; };
+		7EF26BD41B70C84500E05D5D /* CLDError.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045C318E0AE090076657F /* CLDError.h */; };
+		7EF26BD51B70C84800E05D5D /* CLDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 561045C418E0AE090076657F /* CLDError.m */; };
+		7EF26BD81B70C85000E05D5D /* CLDUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 5652A6FB18F5D73C00A8176F /* CLDUtil.h */; };
+		7EF26BD91B70C85300E05D5D /* CLDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5652A6FC18F5D73C00A8176F /* CLDUtil.m */; };
+		7EF26BDA1B70C85500E05D5D /* CLDTransferOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE15519768A590016685B /* CLDTransferOperation.h */; };
+		7EF26BDB1B70C85800E05D5D /* CLDTransferOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BEE15619768A590016685B /* CLDTransferOperation.m */; };
+		7EF26BDC1B70C85A00E05D5D /* CLDLink+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD02E19673CAD006E3772 /* CLDLink+Private.h */; };
+		7EF26BDD1B70C85D00E05D5D /* CLDItem+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 562671C519643CEB004F7BC1 /* CLDItem+Private.h */; };
+		7EF26BDE1B70C86000E05D5D /* CLDTransfer+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE153197683610016685B /* CLDTransfer+Private.h */; };
+		7EF26BDF1B70C86300E05D5D /* CLDTransferManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C01F181973E5E400899FD7 /* CLDTransferManager+Private.h */; };
+		7EF26BE01B70C86500E05D5D /* CLDSession+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 561045BC18E079800076657F /* CLDSession+Private.h */; };
+		7EF26BE11B70C86800E05D5D /* CLDSharedFolder+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD030196AAE0A006E3772 /* CLDSharedFolder+Private.h */; };
+		7EF26BE21B70C86B00E05D5D /* CLDSharedFolderUser+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 563FD031196AAE3D006E3772 /* CLDSharedFolderUser+Private.h */; };
+		7EF26BE31B70C86D00E05D5D /* CLDUser+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 5652A6F618F5CF0C00A8176F /* CLDUser+Private.h */; };
+		7EF26BE41B70C86F00E05D5D /* CLDAccountUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A4618D7618000359A6E /* CLDAccountUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BE51B70C87500E05D5D /* CLDAccountUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A4718D7618000359A6E /* CLDAccountUser.m */; };
+		7EF26BE61B70C87800E05D5D /* CLDItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5018D2171B00027025 /* CLDItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BE71B70C87C00E05D5D /* CLDItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5118D2171B00027025 /* CLDItem.m */; };
+		7EF26BE81B70C87F00E05D5D /* CLDLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5218D2171B00027025 /* CLDLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BE91B70C88300E05D5D /* CLDLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5318D2171B00027025 /* CLDLink.m */; };
+		7EF26BEA1B70C88800E05D5D /* CLDSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5418D2171B00027025 /* CLDSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BEB1B70C88C00E05D5D /* CLDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5518D2171B00027025 /* CLDSession.m */; };
+		7EF26BEC1B70C88E00E05D5D /* CLDSessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 56BEE15F1976C23A0016685B /* CLDSessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BED1B70C89200E05D5D /* CLDSessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 56BEE1601976C23A0016685B /* CLDSessionConfiguration.m */; };
+		7EF26BEE1B70C89400E05D5D /* CLDSharedFolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A3E18D756DA00359A6E /* CLDSharedFolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BEF1B70C89800E05D5D /* CLDSharedFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A3F18D756DA00359A6E /* CLDSharedFolder.m */; };
+		7EF26BF01B70C89C00E05D5D /* CLDSharedFolderUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56C25A4218D75F5C00359A6E /* CLDSharedFolderUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BF11B70C89F00E05D5D /* CLDSharedFolderUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C25A4318D75F5C00359A6E /* CLDSharedFolderUser.m */; };
+		7EF26BF21B70C8A200E05D5D /* CLDTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5618D2171B00027025 /* CLDTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BF31B70C8A600E05D5D /* CLDTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5718D2171B00027025 /* CLDTransfer.m */; };
+		7EF26BF41B70C8A900E05D5D /* CLDTransferManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5818D2171B00027025 /* CLDTransferManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BF51B70C8AC00E05D5D /* CLDTransferManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5918D2171B00027025 /* CLDTransferManager.m */; };
+		7EF26BF61B70C8B000E05D5D /* CLDUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E5A18D2171B00027025 /* CLDUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BF71B70C8B500E05D5D /* CLDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E5B18D2171B00027025 /* CLDUser.m */; };
+		7EF26BF81B70C8BA00E05D5D /* MEOCloudSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CC1E1D18D1C9CD00027025 /* MEOCloudSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EF26BF91B70C8CA00E05D5D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 560D941419D3880A003E72BF /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		56761FAE19631C5E00255541 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5606B7EF18C8EB4E00F6AC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56CC1E3218D1D0CD00027025;
+			remoteInfo = Framework;
+		};
+		56CC1E3718D1D30600027025 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5606B7EF18C8EB4E00F6AC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5606B7F918C8EBC200F6AC0F;
+			remoteInfo = MEOCloudSDK;
+		};
+		56F3128119D31C1600A85ED7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5606B7EF18C8EB4E00F6AC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56F3127619D31BC400A85ED7;
+			remoteInfo = MEOCloudSDKResources;
+		};
+		7EF26C5F1B71007100E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5606B7EF18C8EB4E00F6AC0F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF26BB21B70C80400E05D5D;
+			remoteInfo = "MEOCloudSDK-OSX";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5606B7FA18C8EBC200F6AC0F /* libMEOCloudSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEOCloudSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5606B80118C8EBC200F6AC0F /* MEOCloudSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEOCloudSDK-Prefix.pch"; sourceTree = "<group>"; };
+		560D941319D3880A003E72BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		561045BC18E079800076657F /* CLDSession+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLDSession+Private.h"; sourceTree = "<group>"; };
+		561045BF18E07A640076657F /* CLDAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CLDAuthCredential.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		561045C018E07A640076657F /* CLDAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDAuthCredential.m; sourceTree = "<group>"; };
+		561045C318E0AE090076657F /* CLDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDError.h; sourceTree = "<group>"; };
+		561045C418E0AE090076657F /* CLDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDError.m; sourceTree = "<group>"; };
+		5611815E19659E75002C6347 /* NSDateFormatter+CLDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+CLDAdditions.h"; sourceTree = "<group>"; };
+		5611815F19659E75002C6347 /* NSDateFormatter+CLDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+CLDAdditions.m"; sourceTree = "<group>"; };
+		562671C519643CEB004F7BC1 /* CLDItem+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLDItem+Private.h"; sourceTree = "<group>"; };
+		56390BDF1A66C89100FFD4B1 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		56390BF81A66E38800FFD4B1 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		563FD02E19673CAD006E3772 /* CLDLink+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLDLink+Private.h"; sourceTree = "<group>"; };
+		563FD030196AAE0A006E3772 /* CLDSharedFolder+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLDSharedFolder+Private.h"; sourceTree = "<group>"; };
+		563FD031196AAE3D006E3772 /* CLDSharedFolderUser+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLDSharedFolderUser+Private.h"; sourceTree = "<group>"; };
+		5652A6F618F5CF0C00A8176F /* CLDUser+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLDUser+Private.h"; sourceTree = "<group>"; };
+		5652A6FB18F5D73C00A8176F /* CLDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDUtil.h; sourceTree = "<group>"; };
+		5652A6FC18F5D73C00A8176F /* CLDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDUtil.m; sourceTree = "<group>"; };
+		5652A70618F614DF00A8176F /* CLDLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDLoginViewController.h; sourceTree = "<group>"; };
+		5652A70718F614DF00A8176F /* CLDLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDLoginViewController.m; sourceTree = "<group>"; };
+		5689A5B3199A2C1B00F1590A /* NSCondition+CLDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCondition+CLDAdditions.h"; sourceTree = "<group>"; };
+		5689A5B4199A2C1B00F1590A /* NSCondition+CLDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCondition+CLDAdditions.m"; sourceTree = "<group>"; };
+		56BEE153197683610016685B /* CLDTransfer+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLDTransfer+Private.h"; sourceTree = "<group>"; };
+		56BEE15519768A590016685B /* CLDTransferOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDTransferOperation.h; sourceTree = "<group>"; };
+		56BEE15619768A590016685B /* CLDTransferOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDTransferOperation.m; sourceTree = "<group>"; };
+		56BEE15F1976C23A0016685B /* CLDSessionConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDSessionConfiguration.h; sourceTree = "<group>"; };
+		56BEE1601976C23A0016685B /* CLDSessionConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDSessionConfiguration.m; sourceTree = "<group>"; };
+		56C01F181973E5E400899FD7 /* CLDTransferManager+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CLDTransferManager+Private.h"; sourceTree = "<group>"; };
+		56C25A3E18D756DA00359A6E /* CLDSharedFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDSharedFolder.h; sourceTree = "<group>"; };
+		56C25A3F18D756DA00359A6E /* CLDSharedFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDSharedFolder.m; sourceTree = "<group>"; };
+		56C25A4218D75F5C00359A6E /* CLDSharedFolderUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDSharedFolderUser.h; sourceTree = "<group>"; };
+		56C25A4318D75F5C00359A6E /* CLDSharedFolderUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDSharedFolderUser.m; sourceTree = "<group>"; };
+		56C25A4618D7618000359A6E /* CLDAccountUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = CLDAccountUser.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		56C25A4718D7618000359A6E /* CLDAccountUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDAccountUser.m; sourceTree = "<group>"; };
+		56CC1E1D18D1C9CD00027025 /* MEOCloudSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEOCloudSDK.h; sourceTree = "<group>"; };
+		56CC1E5018D2171B00027025 /* CLDItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDItem.h; sourceTree = "<group>"; };
+		56CC1E5118D2171B00027025 /* CLDItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDItem.m; sourceTree = "<group>"; };
+		56CC1E5218D2171B00027025 /* CLDLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDLink.h; sourceTree = "<group>"; };
+		56CC1E5318D2171B00027025 /* CLDLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDLink.m; sourceTree = "<group>"; };
+		56CC1E5418D2171B00027025 /* CLDSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDSession.h; sourceTree = "<group>"; };
+		56CC1E5518D2171B00027025 /* CLDSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDSession.m; sourceTree = "<group>"; };
+		56CC1E5618D2171B00027025 /* CLDTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDTransfer.h; sourceTree = "<group>"; };
+		56CC1E5718D2171B00027025 /* CLDTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDTransfer.m; sourceTree = "<group>"; };
+		56CC1E5818D2171B00027025 /* CLDTransferManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDTransferManager.h; sourceTree = "<group>"; };
+		56CC1E5918D2171B00027025 /* CLDTransferManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDTransferManager.m; sourceTree = "<group>"; };
+		56CC1E5A18D2171B00027025 /* CLDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDUser.h; sourceTree = "<group>"; };
+		56CC1E5B18D2171B00027025 /* CLDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDUser.m; sourceTree = "<group>"; };
+		56D31C5E199D18EB007692CF /* CLDDrawables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLDDrawables.h; sourceTree = "<group>"; };
+		56D31C5F199D18EB007692CF /* CLDDrawables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLDDrawables.m; sourceTree = "<group>"; };
+		56F3127719D31BC400A85ED7 /* MEOCloudSDK.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEOCloudSDK.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF26BB31B70C80400E05D5D /* MEOCloudSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MEOCloudSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5606B7F718C8EBC200F6AC0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F3127419D31BC400A85ED7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26BAF1B70C80400E05D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5606B7EE18C8EB4E00F6AC0F = {
+			isa = PBXGroup;
+			children = (
+				5606B7FF18C8EBC200F6AC0F /* MEOCloudSDK */,
+				5606B7FB18C8EBC200F6AC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5606B7FB18C8EBC200F6AC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5606B7FA18C8EBC200F6AC0F /* libMEOCloudSDK.a */,
+				56F3127719D31BC400A85ED7 /* MEOCloudSDK.bundle */,
+				7EF26BB31B70C80400E05D5D /* MEOCloudSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5606B7FF18C8EBC200F6AC0F /* MEOCloudSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5652A6F918F5D69C00A8176F /* Additions */,
+				56CC1E4F18D2171B00027025 /* Classes */,
+				56CC1E1D18D1C9CD00027025 /* MEOCloudSDK.h */,
+				56166AA518E39E4B0037F4A6 /* Resources */,
+				5606B80018C8EBC200F6AC0F /* Supporting Files */,
+			);
+			path = MEOCloudSDK;
+			sourceTree = "<group>";
+		};
+		5606B80018C8EBC200F6AC0F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5606B80118C8EBC200F6AC0F /* MEOCloudSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		561045B918E079600076657F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				561045BF18E07A640076657F /* CLDAuthCredential.h */,
+				561045C018E07A640076657F /* CLDAuthCredential.m */,
+				56D31C5E199D18EB007692CF /* CLDDrawables.h */,
+				56D31C5F199D18EB007692CF /* CLDDrawables.m */,
+				561045C318E0AE090076657F /* CLDError.h */,
+				561045C418E0AE090076657F /* CLDError.m */,
+				5652A70618F614DF00A8176F /* CLDLoginViewController.h */,
+				5652A70718F614DF00A8176F /* CLDLoginViewController.m */,
+				5652A6FB18F5D73C00A8176F /* CLDUtil.h */,
+				5652A6FC18F5D73C00A8176F /* CLDUtil.m */,
+				56BEE15519768A590016685B /* CLDTransferOperation.h */,
+				56BEE15619768A590016685B /* CLDTransferOperation.m */,
+				563FD02E19673CAD006E3772 /* CLDLink+Private.h */,
+				562671C519643CEB004F7BC1 /* CLDItem+Private.h */,
+				56BEE153197683610016685B /* CLDTransfer+Private.h */,
+				56C01F181973E5E400899FD7 /* CLDTransferManager+Private.h */,
+				561045BC18E079800076657F /* CLDSession+Private.h */,
+				563FD030196AAE0A006E3772 /* CLDSharedFolder+Private.h */,
+				563FD031196AAE3D006E3772 /* CLDSharedFolderUser+Private.h */,
+				5652A6F618F5CF0C00A8176F /* CLDUser+Private.h */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		56166AA518E39E4B0037F4A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				56166AA618E39E4B0037F4A6 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		56166AA618E39E4B0037F4A6 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				560D941419D3880A003E72BF /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		5652A6F918F5D69C00A8176F /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				5652A6FA18F5D69C00A8176F /* Private */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		5652A6FA18F5D69C00A8176F /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				5611815E19659E75002C6347 /* NSDateFormatter+CLDAdditions.h */,
+				5611815F19659E75002C6347 /* NSDateFormatter+CLDAdditions.m */,
+				5689A5B3199A2C1B00F1590A /* NSCondition+CLDAdditions.h */,
+				5689A5B4199A2C1B00F1590A /* NSCondition+CLDAdditions.m */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		56CC1E4F18D2171B00027025 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				561045B918E079600076657F /* Private */,
+				56C25A4618D7618000359A6E /* CLDAccountUser.h */,
+				56C25A4718D7618000359A6E /* CLDAccountUser.m */,
+				56CC1E5018D2171B00027025 /* CLDItem.h */,
+				56CC1E5118D2171B00027025 /* CLDItem.m */,
+				56CC1E5218D2171B00027025 /* CLDLink.h */,
+				56CC1E5318D2171B00027025 /* CLDLink.m */,
+				56CC1E5418D2171B00027025 /* CLDSession.h */,
+				56CC1E5518D2171B00027025 /* CLDSession.m */,
+				56BEE15F1976C23A0016685B /* CLDSessionConfiguration.h */,
+				56BEE1601976C23A0016685B /* CLDSessionConfiguration.m */,
+				56C25A3E18D756DA00359A6E /* CLDSharedFolder.h */,
+				56C25A3F18D756DA00359A6E /* CLDSharedFolder.m */,
+				56C25A4218D75F5C00359A6E /* CLDSharedFolderUser.h */,
+				56C25A4318D75F5C00359A6E /* CLDSharedFolderUser.m */,
+				56CC1E5618D2171B00027025 /* CLDTransfer.h */,
+				56CC1E5718D2171B00027025 /* CLDTransfer.m */,
+				56CC1E5818D2171B00027025 /* CLDTransferManager.h */,
+				56CC1E5918D2171B00027025 /* CLDTransferManager.m */,
+				56CC1E5A18D2171B00027025 /* CLDUser.h */,
+				56CC1E5B18D2171B00027025 /* CLDUser.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		56CC1E2018D1CA6900027025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CC1E2218D1CAF900027025 /* MEOCloudSDK.h in Headers */,
+				56C01F191973E60A00899FD7 /* CLDTransferManager+Private.h in Headers */,
+				56C25A4818D7618000359A6E /* CLDAccountUser.h in Headers */,
+				5689A5B5199A2C1B00F1590A /* NSCondition+CLDAdditions.h in Headers */,
+				56CC1E6018D2171B00027025 /* CLDSession.h in Headers */,
+				5652A6F818F5D24100A8176F /* CLDUser+Private.h in Headers */,
+				5652A70818F614DF00A8176F /* CLDLoginViewController.h in Headers */,
+				563FD02F19673D30006E3772 /* CLDLink+Private.h in Headers */,
+				56CC1E5C18D2171B00027025 /* CLDItem.h in Headers */,
+				5611816019659E75002C6347 /* NSDateFormatter+CLDAdditions.h in Headers */,
+				563FD033196AAF00006E3772 /* CLDSharedFolderUser+Private.h in Headers */,
+				56D31C60199D18EB007692CF /* CLDDrawables.h in Headers */,
+				56CC1E6618D2171B00027025 /* CLDUser.h in Headers */,
+				56C25A4418D75F5C00359A6E /* CLDSharedFolderUser.h in Headers */,
+				561045C118E07A640076657F /* CLDAuthCredential.h in Headers */,
+				56BEE15719768A590016685B /* CLDTransferOperation.h in Headers */,
+				563FD032196AAEFD006E3772 /* CLDSharedFolder+Private.h in Headers */,
+				56CC1E6218D2171B00027025 /* CLDTransfer.h in Headers */,
+				56BEE154197683610016685B /* CLDTransfer+Private.h in Headers */,
+				561045BE18E079800076657F /* CLDSession+Private.h in Headers */,
+				56C25A4018D756DA00359A6E /* CLDSharedFolder.h in Headers */,
+				56CC1E5E18D2171B00027025 /* CLDLink.h in Headers */,
+				5652A6FD18F5D73C00A8176F /* CLDUtil.h in Headers */,
+				561045C518E0AE090076657F /* CLDError.h in Headers */,
+				56CC1E6418D2171B00027025 /* CLDTransferManager.h in Headers */,
+				56BEE1611976C23A0016685B /* CLDSessionConfiguration.h in Headers */,
+				562671C619643CEB004F7BC1 /* CLDItem+Private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26BB01B70C80400E05D5D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26BD81B70C85000E05D5D /* CLDUtil.h in Headers */,
+				7EF26BCC1B70C82200E05D5D /* NSDateFormatter+CLDAdditions.h in Headers */,
+				7EF26BD41B70C84500E05D5D /* CLDError.h in Headers */,
+				7EF26BE31B70C86D00E05D5D /* CLDUser+Private.h in Headers */,
+				7EF26BD01B70C83900E05D5D /* CLDAuthCredential.h in Headers */,
+				7EF26BE41B70C86F00E05D5D /* CLDAccountUser.h in Headers */,
+				7EF26BF21B70C8A200E05D5D /* CLDTransfer.h in Headers */,
+				7EF26BF81B70C8BA00E05D5D /* MEOCloudSDK.h in Headers */,
+				7EF26BF01B70C89C00E05D5D /* CLDSharedFolderUser.h in Headers */,
+				7EF26BE81B70C87F00E05D5D /* CLDLink.h in Headers */,
+				7EF26BEA1B70C88800E05D5D /* CLDSession.h in Headers */,
+				7EF26BEE1B70C89400E05D5D /* CLDSharedFolder.h in Headers */,
+				7EF26BE11B70C86800E05D5D /* CLDSharedFolder+Private.h in Headers */,
+				7EF26BF61B70C8B000E05D5D /* CLDUser.h in Headers */,
+				7EF26BCE1B70C82900E05D5D /* NSCondition+CLDAdditions.h in Headers */,
+				7EF26BDA1B70C85500E05D5D /* CLDTransferOperation.h in Headers */,
+				7EF26BDC1B70C85A00E05D5D /* CLDLink+Private.h in Headers */,
+				7EF26BE01B70C86500E05D5D /* CLDSession+Private.h in Headers */,
+				7EF26BDE1B70C86000E05D5D /* CLDTransfer+Private.h in Headers */,
+				7EF26BDD1B70C85D00E05D5D /* CLDItem+Private.h in Headers */,
+				7EF26BDF1B70C86300E05D5D /* CLDTransferManager+Private.h in Headers */,
+				7EF26BEC1B70C88E00E05D5D /* CLDSessionConfiguration.h in Headers */,
+				7EF26BE61B70C87800E05D5D /* CLDItem.h in Headers */,
+				7EF26BE21B70C86B00E05D5D /* CLDSharedFolderUser+Private.h in Headers */,
+				7EF26BF41B70C8A900E05D5D /* CLDTransferManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5606B7F918C8EBC200F6AC0F /* MEOCloudSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5606B81B18C8EBC300F6AC0F /* Build configuration list for PBXNativeTarget "MEOCloudSDK" */;
+			buildPhases = (
+				5606B7F618C8EBC200F6AC0F /* Sources */,
+				5606B7F718C8EBC200F6AC0F /* Frameworks */,
+				56CC1E2018D1CA6900027025 /* Headers */,
+				56CC1E2A18D1CC9C00027025 /* Prepare Framework */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEOCloudSDK;
+			productName = MEOCloudSDK;
+			productReference = 5606B7FA18C8EBC200F6AC0F /* libMEOCloudSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		56F3127619D31BC400A85ED7 /* MEOCloudSDKResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56F3127D19D31BC400A85ED7 /* Build configuration list for PBXNativeTarget "MEOCloudSDKResources" */;
+			buildPhases = (
+				56F3127319D31BC400A85ED7 /* Sources */,
+				56F3127419D31BC400A85ED7 /* Frameworks */,
+				56F3127519D31BC400A85ED7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEOCloudSDKResources;
+			productName = MEOCloudSDKResource;
+			productReference = 56F3127719D31BC400A85ED7 /* MEOCloudSDK.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		7EF26BB21B70C80400E05D5D /* MEOCloudSDK-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF26BCA1B70C80400E05D5D /* Build configuration list for PBXNativeTarget "MEOCloudSDK-OSX" */;
+			buildPhases = (
+				7EF26BAE1B70C80400E05D5D /* Sources */,
+				7EF26BAF1B70C80400E05D5D /* Frameworks */,
+				7EF26BB01B70C80400E05D5D /* Headers */,
+				7EF26BB11B70C80400E05D5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MEOCloudSDK-OSX";
+			productName = "MEOCloudSDK-OSX";
+			productReference = 7EF26BB31B70C80400E05D5D /* MEOCloudSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5606B7EF18C8EB4E00F6AC0F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				TargetAttributes = {
+					56F3127619D31BC400A85ED7 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					7EF26BB21B70C80400E05D5D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 5606B7F218C8EB4E00F6AC0F /* Build configuration list for PBXProject "MEOCloudSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				pt,
+				"pt-PT",
+			);
+			mainGroup = 5606B7EE18C8EB4E00F6AC0F;
+			productRefGroup = 5606B7FB18C8EBC200F6AC0F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5606B7F918C8EBC200F6AC0F /* MEOCloudSDK */,
+				56CC1E3218D1D0CD00027025 /* Framework (iOS 7) */,
+				56761FA319631C4E00255541 /* Documentation */,
+				56F3127619D31BC400A85ED7 /* MEOCloudSDKResources */,
+				7EF26BB21B70C80400E05D5D /* MEOCloudSDK-OSX */,
+				7EF26C541B71004D00E05D5D /* Framework (OS X) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56F3127519D31BC400A85ED7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560D941219D3880A003E72BF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26BB11B70C80400E05D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26BF91B70C8CA00E05D5D /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56761FA919631C4E00255541 /* Create Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Create Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set +u\n\n# Avoid recursively calling this script.\nif [[ $BLOCK_SCRIPTS ]]\nthen\nexit 0\nfi\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n/usr/local/bin/appledoc --project-name \"MEO Cloud SDK\" --project-version \"${CURRENT_PROJECT_VERSION}\" --project-company \"MEO\" --company-id pt.meo --output \"${BUILT_PRODUCTS_DIR}\" --no-install-docset --no-repeat-first-par --explicit-crossref --keep-undocumented-members --merge-categories --ignore .m --use-code-order --create-docset --keep-intermediate-files --no-publish-docset \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Headers/\"\n\nSF_DOCSET_PATH=\"${BUILT_PRODUCTS_DIR}/MEOCloudSDK.docset\"\n\nif [ -d \"${SF_DOCSET_PATH}\" ]; then\nrm -R \"${SF_DOCSET_PATH}\"\nfi\n\nmv \"${BUILT_PRODUCTS_DIR}/docset\" \"${SF_DOCSET_PATH}\"";
+		};
+		56761FAA19631C4E00255541 /* Copy Documentation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Documentation";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n\n# Avoid recursively calling this script.\nif [[ $BLOCK_SCRIPTS ]]\nthen\nexit 0\nfi\n\n# Create build directory\nif [ ! -d \"${PROJECT_DIR}/Documentation/\" ]; then\nmkdir -p \"${PROJECT_DIR}/Documentation/\"\nfi\n\ncp -R \"${BUILT_PRODUCTS_DIR}/MEOCloudSDK.docset\" \"${PROJECT_DIR}/Documentation/\"\n";
+		};
+		56CC1E2A18D1CC9C00027025 /* Prepare Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		56CC1E3618D1D0DE00027025 /* Build Framework for all platforms */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework for all platforms";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"";
+		};
+		56CC1E4D18D206CF00027025 /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n\n# Avoid recursively calling this script.\nif [[ $BLOCK_SCRIPTS ]]\nthen\nexit 0\nfi\n\nrm -Rf \"${PROJECT_DIR}/Framework-iOS7/\"\nmkdir -p \"${PROJECT_DIR}/Framework-iOS7/\"\ncp -R \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/Framework-iOS7/\"\ncp -R \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.bundle\" \"${PROJECT_DIR}/Framework-iOS7/\"\n";
+		};
+		7EF26C5A1B71004D00E05D5D /* Copy Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n\n# Avoid recursively calling this script.\nif [[ $BLOCK_SCRIPTS ]]\nthen\nexit 0\nfi\n\nrm -Rf \"${PROJECT_DIR}/Framework-OSX/\"\nmkdir -p \"${PROJECT_DIR}/Framework-OSX/\"\ncp -R \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}/Framework-OSX/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5606B7F618C8EBC200F6AC0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56C25A4518D75F5C00359A6E /* CLDSharedFolderUser.m in Sources */,
+				561045C618E0AE090076657F /* CLDError.m in Sources */,
+				56CC1E6318D2171B00027025 /* CLDTransfer.m in Sources */,
+				56BEE1621976C23A0016685B /* CLDSessionConfiguration.m in Sources */,
+				5652A6FE18F5D73C00A8176F /* CLDUtil.m in Sources */,
+				5652A70918F614DF00A8176F /* CLDLoginViewController.m in Sources */,
+				56C25A4918D7618000359A6E /* CLDAccountUser.m in Sources */,
+				56CC1E6718D2171B00027025 /* CLDUser.m in Sources */,
+				56CC1E6818D2172C00027025 /* CLDItem.m in Sources */,
+				56C25A4118D756DA00359A6E /* CLDSharedFolder.m in Sources */,
+				561045C218E07A640076657F /* CLDAuthCredential.m in Sources */,
+				5689A5B6199A2C1B00F1590A /* NSCondition+CLDAdditions.m in Sources */,
+				56CC1E6518D2171B00027025 /* CLDTransferManager.m in Sources */,
+				56BEE15819768A590016685B /* CLDTransferOperation.m in Sources */,
+				56CC1E6118D2171B00027025 /* CLDSession.m in Sources */,
+				56D31C61199D18EB007692CF /* CLDDrawables.m in Sources */,
+				56CC1E5F18D2171B00027025 /* CLDLink.m in Sources */,
+				5611816119659E75002C6347 /* NSDateFormatter+CLDAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56F3127319D31BC400A85ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26BAE1B70C80400E05D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26BF31B70C8A600E05D5D /* CLDTransfer.m in Sources */,
+				7EF26BCF1B70C82D00E05D5D /* NSCondition+CLDAdditions.m in Sources */,
+				7EF26BF51B70C8AC00E05D5D /* CLDTransferManager.m in Sources */,
+				7EF26BF11B70C89F00E05D5D /* CLDSharedFolderUser.m in Sources */,
+				7EF26BE51B70C87500E05D5D /* CLDAccountUser.m in Sources */,
+				7EF26BDB1B70C85800E05D5D /* CLDTransferOperation.m in Sources */,
+				7EF26BE71B70C87C00E05D5D /* CLDItem.m in Sources */,
+				7EF26BCD1B70C82500E05D5D /* NSDateFormatter+CLDAdditions.m in Sources */,
+				7EF26BD91B70C85300E05D5D /* CLDUtil.m in Sources */,
+				7EF26BE91B70C88300E05D5D /* CLDLink.m in Sources */,
+				7EF26BED1B70C89200E05D5D /* CLDSessionConfiguration.m in Sources */,
+				7EF26BD51B70C84800E05D5D /* CLDError.m in Sources */,
+				7EF26BEF1B70C89800E05D5D /* CLDSharedFolder.m in Sources */,
+				7EF26BF71B70C8B500E05D5D /* CLDUser.m in Sources */,
+				7EF26BEB1B70C88C00E05D5D /* CLDSession.m in Sources */,
+				7EF26BD11B70C83C00E05D5D /* CLDAuthCredential.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		56761FAF19631C5E00255541 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56CC1E3218D1D0CD00027025 /* Framework (iOS 7) */;
+			targetProxy = 56761FAE19631C5E00255541 /* PBXContainerItemProxy */;
+		};
+		56CC1E3818D1D30600027025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5606B7F918C8EBC200F6AC0F /* MEOCloudSDK */;
+			targetProxy = 56CC1E3718D1D30600027025 /* PBXContainerItemProxy */;
+		};
+		56F3128219D31C1600A85ED7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56F3127619D31BC400A85ED7 /* MEOCloudSDKResources */;
+			targetProxy = 56F3128119D31C1600A85ED7 /* PBXContainerItemProxy */;
+		};
+		7EF26C601B71007100E05D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EF26BB21B70C80400E05D5D /* MEOCloudSDK-OSX */;
+			targetProxy = 7EF26C5F1B71007100E05D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		560D941419D3880A003E72BF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				560D941319D3880A003E72BF /* en */,
+				56390BDF1A66C89100FFD4B1 /* pt */,
+				56390BF81A66E38800FFD4B1 /* pt-PT */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5606B7F318C8EB4E00F6AC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		5606B7F418C8EB4E00F6AC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		5606B81C18C8EBC300F6AC0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/MEOCloudSDK.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEOCloudSDK/MEOCloudSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/MEOCloudSDK/Vendor/OAuth2Client/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				VERSION_INFO_FILE = "$(PRODUCT_NAME)_vers.c";
+			};
+			name = Debug;
+		};
+		5606B81D18C8EBC300F6AC0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/MEOCloudSDK.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEOCloudSDK/MEOCloudSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/MEOCloudSDK/Vendor/OAuth2Client/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				VALIDATE_PRODUCT = YES;
+				VERSION_INFO_FILE = "$(PRODUCT_NAME)_vers.c";
+			};
+			name = Release;
+		};
+		56761FAC19631C4E00255541 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Framework copy";
+			};
+			name = Debug;
+		};
+		56761FAD19631C4E00255541 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Framework copy";
+			};
+			name = Release;
+		};
+		56CC1E3418D1D0CD00027025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		56CC1E3518D1D0CD00027025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		56F3127B19D31BC400A85ED7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "${PROJECT_NAME}";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		56F3127C19D31BC400A85ED7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "${PROJECT_NAME}";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		7EF26BC61B70C80400E05D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEOCloudSDK/MEOCloudSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = MEOCloudSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MEOCloudSDK;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF26BC71B70C80400E05D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEOCloudSDK/MEOCloudSDK-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = MEOCloudSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MEOCloudSDK;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF26C5C1B71004D00E05D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Framework (iOS 7) copy";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7EF26C5D1B71004D00E05D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Framework (iOS 7) copy";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5606B7F218C8EB4E00F6AC0F /* Build configuration list for PBXProject "MEOCloudSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5606B7F318C8EB4E00F6AC0F /* Debug */,
+				5606B7F418C8EB4E00F6AC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5606B81B18C8EBC300F6AC0F /* Build configuration list for PBXNativeTarget "MEOCloudSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5606B81C18C8EBC300F6AC0F /* Debug */,
+				5606B81D18C8EBC300F6AC0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56761FAB19631C4E00255541 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56761FAC19631C4E00255541 /* Debug */,
+				56761FAD19631C4E00255541 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56CC1E3318D1D0CD00027025 /* Build configuration list for PBXAggregateTarget "Framework (iOS 7)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CC1E3418D1D0CD00027025 /* Debug */,
+				56CC1E3518D1D0CD00027025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56F3127D19D31BC400A85ED7 /* Build configuration list for PBXNativeTarget "MEOCloudSDKResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56F3127B19D31BC400A85ED7 /* Debug */,
+				56F3127C19D31BC400A85ED7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF26BCA1B70C80400E05D5D /* Build configuration list for PBXNativeTarget "MEOCloudSDK-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF26BC61B70C80400E05D5D /* Debug */,
+				7EF26BC71B70C80400E05D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF26C5B1B71004D00E05D5D /* Build configuration list for PBXAggregateTarget "Framework (OS X)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF26C5C1B71004D00E05D5D /* Debug */,
+				7EF26C5D1B71004D00E05D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5606B7EF18C8EB4E00F6AC0F /* Project object */;
+}

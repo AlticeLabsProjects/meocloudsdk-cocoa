@@ -17,6 +17,12 @@ DerivedData
 *.ipa
 *.xcuserstate
 
+MEOCloudSDK/Documentation
+MEOCloudSDK/Framework
+MEOCloudSDK/Framework-iOS7
+MEOCloudSDK/Framework-OSX
+
+
 # CocoaPods
 #
 # We recommend against adding the Pods directory to your .gitignore. However

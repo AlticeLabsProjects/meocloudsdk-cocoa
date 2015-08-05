@@ -1,0 +1,31 @@
+/* 
+  CLDErrors.strings
+  MEOCloudSDK
+
+  Created by Hugo Sousa on 26/03/14.
+
+*/
+
+"Error" = "Error";
+"file" = "file";
+"folder" = "folder";
+"item" = "item";
+"That file" = "That file";
+"That folder" = "That folder";
+"CLDErrorCodeUnknownError" = "An unknown error has occurred.";
+"CLDErrorCodeUnauthorized" = "You are not authorized to perform this operation.";
+"CLDErrorCodeAccessForbidden" = "You do not have permission to perform this operation.";
+"CLDErrorCodeInvalidResponse" = "The server provided an invalid response.";
+"CLDErrorCodeTooManyRecords" = "The server cannot perform this operation on so many files at once.";
+"CLDErrorCodeOverQuota" = "Your account ran out of space.";
+"CLDErrorCodeResourceNotFound" = "The requested item could not be found.";
+"CLDErrorCodeResourceAlreadyExists" = "%@ already exists."; //ex. That file already exists.
+"CLDErrorCodeSessionNotLinked" = "User not authenticated.";
+"CLDErrorCodeSessionAlreadyLinked" = "User already authenticated.";
+"CLDErrorCodeMissingWindow" = "Could not find a window to show the content.";
+"CLDErrorCodeConnectionTimedOut" = "Connection timed out.";
+"CLDErrorCodeConnectionFailed" = "Failed to connect to the server.";
+"CLDErrorCodeServerCouldNotCreateThumbnail" = "Server could not create thumbnail for the file.";
+"CLDErrorCodeInvalidItem" = "Item is not valid for transfering.";
+"CLDErrorCodeInvalidParameters" = "Invalid parameters sent to server.";
+"CLDErrorCancelledByUser" = "Operation cancelled by user.";

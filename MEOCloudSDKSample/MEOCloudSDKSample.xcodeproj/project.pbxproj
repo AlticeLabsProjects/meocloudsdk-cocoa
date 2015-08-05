@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		56CC1E8018D2187100027025 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 56CC1E7E18D2187100027025 /* InfoPlist.strings */; };
+		56CC1E8218D2187100027025 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E8118D2187100027025 /* main.m */; };
+		56CC1E8618D2187100027025 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E8518D2187100027025 /* AppDelegate.m */; };
+		56CC1E8918D2187100027025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CC1E8718D2187100027025 /* Main.storyboard */; };
+		56CC1E8C18D2187100027025 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CC1E8B18D2187100027025 /* ViewController.m */; };
+		56CC1E8E18D2187100027025 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC1E8D18D2187100027025 /* Images.xcassets */; };
+		7EF26B911B70C38000E05D5D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26B901B70C38000E05D5D /* AppDelegate.m */; };
+		7EF26B931B70C38000E05D5D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26B921B70C38000E05D5D /* main.m */; };
+		7EF26B951B70C38000E05D5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26B941B70C38000E05D5D /* Images.xcassets */; };
+		7EF26BAD1B70C65500E05D5D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26BAC1B70C65500E05D5D /* ViewController.m */; };
+		7EF26C111B70F83500E05D5D /* MyCLDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C101B70F83500E05D5D /* MyCLDSession.m */; };
+		7EF26C121B70F83500E05D5D /* MyCLDSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C101B70F83500E05D5D /* MyCLDSession.m */; };
+		7EF26C161B70FA0D00E05D5D /* MEOCloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF26C151B70FA0D00E05D5D /* MEOCloudSDK.framework */; };
+		7EF26C611B7100B200E05D5D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EF26B961B70C38000E05D5D /* MainMenu.xib */; };
+		7EF26C651B7100DA00E05D5D /* MEOCloudSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EF26C641B7100DA00E05D5D /* MEOCloudSDK.framework */; };
+		7EF26C7D1B71069800E05D5D /* DropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF26C7C1B71069800E05D5D /* DropView.m */; };
+		7EF26C851B72258100E05D5D /* MEOCloudSDK.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EF26C641B7100DA00E05D5D /* MEOCloudSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EF26C711B71026900E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5606B7FA18C8EBC200F6AC0F;
+			remoteInfo = MEOCloudSDK;
+		};
+		7EF26C731B71026900E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56F3127719D31BC400A85ED7;
+			remoteInfo = MEOCloudSDKResources;
+		};
+		7EF26C751B71026900E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7EF26BB31B70C80400E05D5D;
+			remoteInfo = "MEOCloudSDK-OSX";
+		};
+		7EF26C771B7102A300E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EF26C541B71004D00E05D5D;
+			remoteInfo = "Framework (OS X)";
+		};
+		7EF26C791B7102A800E05D5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56CC1E3218D1D0CD00027025;
+			remoteInfo = "Framework (iOS 7)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EF26C801B72257500E05D5D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7EF26C851B72258100E05D5D /* MEOCloudSDK.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5645D43D196B630F00331AFF /* MEOCloudSDKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MEOCloudSDKSample.entitlements; sourceTree = "<group>"; };
+		56CC1E7218D2187100027025 /* iOS Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		56CC1E7D18D2187100027025 /* MEOCloudSDKSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEOCloudSDKSample-Info.plist"; sourceTree = "<group>"; };
+		56CC1E7F18D2187100027025 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		56CC1E8118D2187100027025 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		56CC1E8318D2187100027025 /* MEOCloudSDKSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEOCloudSDKSample-Prefix.pch"; sourceTree = "<group>"; };
+		56CC1E8418D2187100027025 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		56CC1E8518D2187100027025 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		56CC1E8818D2187100027025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56CC1E8A18D2187100027025 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		56CC1E8B18D2187100027025 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		56CC1E8D18D2187100027025 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EF26B8B1B70C38000E05D5D /* OS X Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OS X Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EF26B8E1B70C38000E05D5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EF26B8F1B70C38000E05D5D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EF26B901B70C38000E05D5D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EF26B921B70C38000E05D5D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EF26B941B70C38000E05D5D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7EF26B971B70C38000E05D5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7EF26BAB1B70C65500E05D5D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7EF26BAC1B70C65500E05D5D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EF26C0F1B70F83500E05D5D /* MyCLDSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCLDSession.h; sourceTree = "<group>"; };
+		7EF26C101B70F83500E05D5D /* MyCLDSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCLDSession.m; sourceTree = "<group>"; };
+		7EF26C131B70F8FE00E05D5D /* OS_X_Sample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OS_X_Sample-Prefix.pch"; sourceTree = "<group>"; };
+		7EF26C151B70FA0D00E05D5D /* MEOCloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEOCloudSDK.framework; path = "../../MEOCloudSDK/Framework-iOS7/MEOCloudSDK.framework"; sourceTree = "<group>"; };
+		7EF26C641B7100DA00E05D5D /* MEOCloudSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MEOCloudSDK.framework; path = "../../MEOCloudSDK/Framework-OSX/MEOCloudSDK.framework"; sourceTree = "<group>"; };
+		7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MEOCloudSDK.xcodeproj; path = ../MEOCloudSDK/MEOCloudSDK.xcodeproj; sourceTree = "<group>"; };
+		7EF26C7B1B71069800E05D5D /* DropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropView.h; sourceTree = "<group>"; };
+		7EF26C7C1B71069800E05D5D /* DropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56CC1E6F18D2187100027025 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26C161B70FA0D00E05D5D /* MEOCloudSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26B881B70C38000E05D5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26C651B7100DA00E05D5D /* MEOCloudSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		56CC1E6918D2187100027025 = {
+			isa = PBXGroup;
+			children = (
+				7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */,
+				7EF26C0E1B70F83500E05D5D /* Common */,
+				56CC1E7B18D2187100027025 /* iOS Sample */,
+				7EF26B8C1B70C38000E05D5D /* OS X Sample */,
+				56CC1E7318D2187100027025 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		56CC1E7318D2187100027025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56CC1E7218D2187100027025 /* iOS Sample.app */,
+				7EF26B8B1B70C38000E05D5D /* OS X Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		56CC1E7B18D2187100027025 /* iOS Sample */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C151B70FA0D00E05D5D /* MEOCloudSDK.framework */,
+				5645D43D196B630F00331AFF /* MEOCloudSDKSample.entitlements */,
+				56CC1E8418D2187100027025 /* AppDelegate.h */,
+				56CC1E8518D2187100027025 /* AppDelegate.m */,
+				56CC1E8718D2187100027025 /* Main.storyboard */,
+				56CC1E8A18D2187100027025 /* ViewController.h */,
+				56CC1E8B18D2187100027025 /* ViewController.m */,
+				56CC1E8D18D2187100027025 /* Images.xcassets */,
+				56CC1E7C18D2187100027025 /* Supporting Files */,
+			);
+			path = "iOS Sample";
+			sourceTree = "<group>";
+		};
+		56CC1E7C18D2187100027025 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				56CC1E7D18D2187100027025 /* MEOCloudSDKSample-Info.plist */,
+				56CC1E7E18D2187100027025 /* InfoPlist.strings */,
+				56CC1E8118D2187100027025 /* main.m */,
+				56CC1E8318D2187100027025 /* MEOCloudSDKSample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF26B8C1B70C38000E05D5D /* OS X Sample */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C641B7100DA00E05D5D /* MEOCloudSDK.framework */,
+				7EF26B8F1B70C38000E05D5D /* AppDelegate.h */,
+				7EF26B901B70C38000E05D5D /* AppDelegate.m */,
+				7EF26C7B1B71069800E05D5D /* DropView.h */,
+				7EF26C7C1B71069800E05D5D /* DropView.m */,
+				7EF26BAB1B70C65500E05D5D /* ViewController.h */,
+				7EF26BAC1B70C65500E05D5D /* ViewController.m */,
+				7EF26B941B70C38000E05D5D /* Images.xcassets */,
+				7EF26B961B70C38000E05D5D /* MainMenu.xib */,
+				7EF26B8D1B70C38000E05D5D /* Supporting Files */,
+			);
+			path = "OS X Sample";
+			sourceTree = "<group>";
+		};
+		7EF26B8D1B70C38000E05D5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C131B70F8FE00E05D5D /* OS_X_Sample-Prefix.pch */,
+				7EF26B8E1B70C38000E05D5D /* Info.plist */,
+				7EF26B921B70C38000E05D5D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7EF26C0E1B70F83500E05D5D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C0F1B70F83500E05D5D /* MyCLDSession.h */,
+				7EF26C101B70F83500E05D5D /* MyCLDSession.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7EF26C691B71026800E05D5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EF26C721B71026900E05D5D /* libMEOCloudSDK.a */,
+				7EF26C741B71026900E05D5D /* MEOCloudSDK.bundle */,
+				7EF26C761B71026900E05D5D /* MEOCloudSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		56CC1E7118D2187100027025 /* iOS Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56CC1EA418D2187100027025 /* Build configuration list for PBXNativeTarget "iOS Sample" */;
+			buildPhases = (
+				56CC1E6E18D2187100027025 /* Sources */,
+				56CC1E6F18D2187100027025 /* Frameworks */,
+				56CC1E7018D2187100027025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF26C7A1B7102A800E05D5D /* PBXTargetDependency */,
+			);
+			name = "iOS Sample";
+			productName = MEOCloudSDKSample;
+			productReference = 56CC1E7218D2187100027025 /* iOS Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7EF26B8A1B70C38000E05D5D /* OS X Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EF26BA51B70C38100E05D5D /* Build configuration list for PBXNativeTarget "OS X Sample" */;
+			buildPhases = (
+				7EF26B871B70C38000E05D5D /* Sources */,
+				7EF26B881B70C38000E05D5D /* Frameworks */,
+				7EF26B891B70C38000E05D5D /* Resources */,
+				7EF26C801B72257500E05D5D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7EF26C781B7102A300E05D5D /* PBXTargetDependency */,
+			);
+			name = "OS X Sample";
+			productName = "OS X Sample";
+			productReference = 7EF26B8B1B70C38000E05D5D /* OS X Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56CC1E6A18D2187100027025 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SAPO;
+				TargetAttributes = {
+					56CC1E7118D2187100027025 = {
+						DevelopmentTeam = 442MQ6P3QM;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+					7EF26B8A1B70C38000E05D5D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 56CC1E6D18D2187100027025 /* Build configuration list for PBXProject "MEOCloudSDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 56CC1E6918D2187100027025;
+			productRefGroup = 56CC1E7318D2187100027025 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7EF26C691B71026800E05D5D /* Products */;
+					ProjectRef = 7EF26C681B71026800E05D5D /* MEOCloudSDK.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				56CC1E7118D2187100027025 /* iOS Sample */,
+				7EF26B8A1B70C38000E05D5D /* OS X Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7EF26C721B71026900E05D5D /* libMEOCloudSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMEOCloudSDK.a;
+			remoteRef = 7EF26C711B71026900E05D5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7EF26C741B71026900E05D5D /* MEOCloudSDK.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MEOCloudSDK.bundle;
+			remoteRef = 7EF26C731B71026900E05D5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7EF26C761B71026900E05D5D /* MEOCloudSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MEOCloudSDK.framework;
+			remoteRef = 7EF26C751B71026900E05D5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		56CC1E7018D2187100027025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CC1E8E18D2187100027025 /* Images.xcassets in Resources */,
+				56CC1E8018D2187100027025 /* InfoPlist.strings in Resources */,
+				56CC1E8918D2187100027025 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26B891B70C38000E05D5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26B951B70C38000E05D5D /* Images.xcassets in Resources */,
+				7EF26C611B7100B200E05D5D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		56CC1E6E18D2187100027025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56CC1E8C18D2187100027025 /* ViewController.m in Sources */,
+				7EF26C111B70F83500E05D5D /* MyCLDSession.m in Sources */,
+				56CC1E8618D2187100027025 /* AppDelegate.m in Sources */,
+				56CC1E8218D2187100027025 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EF26B871B70C38000E05D5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF26BAD1B70C65500E05D5D /* ViewController.m in Sources */,
+				7EF26B931B70C38000E05D5D /* main.m in Sources */,
+				7EF26C121B70F83500E05D5D /* MyCLDSession.m in Sources */,
+				7EF26C7D1B71069800E05D5D /* DropView.m in Sources */,
+				7EF26B911B70C38000E05D5D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EF26C781B7102A300E05D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Framework (OS X)";
+			targetProxy = 7EF26C771B7102A300E05D5D /* PBXContainerItemProxy */;
+		};
+		7EF26C7A1B7102A800E05D5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Framework (iOS 7)";
+			targetProxy = 7EF26C791B7102A800E05D5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		56CC1E7E18D2187100027025 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CC1E7F18D2187100027025 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		56CC1E8718D2187100027025 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				56CC1E8818D2187100027025 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EF26B961B70C38000E05D5D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EF26B971B70C38000E05D5D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		56CC1EA218D2187100027025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		56CC1EA318D2187100027025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		56CC1EA518D2187100027025 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "iOS Sample/MEOCloudSDKSample.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MEOCloudSDK/Framework-iOS7\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Sample/MEOCloudSDKSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../MEOCloudSDK/MEOCloudSDK/Vendor/OAuth2Client\"/**",
+				);
+				INFOPLIST_FILE = "iOS Sample/MEOCloudSDKSample-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		56CC1EA618D2187100027025 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "iOS Sample/MEOCloudSDKSample.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MEOCloudSDK/Framework-iOS7\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Sample/MEOCloudSDKSample-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../MEOCloudSDK/MEOCloudSDK/Vendor/OAuth2Client\"/**",
+				);
+				INFOPLIST_FILE = "iOS Sample/MEOCloudSDKSample-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7EF26BA61B70C38100E05D5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MEOCloudSDK/Framework-OSX\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MEOCloudSDK-ghqozsubrabtsmegzejsubywielt/Build/Products/Debug",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OS X Sample/OS_X_Sample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OS X Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7EF26BA71B70C38100E05D5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../MEOCloudSDK/Framework-OSX\"",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/MEOCloudSDK-ghqozsubrabtsmegzejsubywielt/Build/Products/Debug",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OS X Sample/OS_X_Sample-Prefix.pch";
+				INFOPLIST_FILE = "OS X Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		56CC1E6D18D2187100027025 /* Build configuration list for PBXProject "MEOCloudSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CC1EA218D2187100027025 /* Debug */,
+				56CC1EA318D2187100027025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		56CC1EA418D2187100027025 /* Build configuration list for PBXNativeTarget "iOS Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56CC1EA518D2187100027025 /* Debug */,
+				56CC1EA618D2187100027025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EF26BA51B70C38100E05D5D /* Build configuration list for PBXNativeTarget "OS X Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF26BA61B70C38100E05D5D /* Debug */,
+				7EF26BA71B70C38100E05D5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56CC1E6A18D2187100027025 /* Project object */;
+}
