@@ -67,7 +67,7 @@ When using this method you'll need to store the CLDSessionValidateCallbackURLBlo
 
  * Listing items on the root:
 
- ```
+ ``` Objective-C
 CLDItem *item = [CLDItem rootFolderItem];
 [[CLDSession defaultSession] fetchItem:item options:CLDSessionFetchItemOptionNone resultBlock:^(CLDItem *item) {
             NSLog(@"Fetched root folder! (%@)", item.folderHash);
@@ -78,7 +78,7 @@ CLDItem *item = [CLDItem rootFolderItem];
  
  * Renaming a file:
  
- ```
+ ``` Objective-C
 CLDItem *item = [CLDItem itemWithPath:@"/initial name.pdf"];
 NSString *newName = @"new name.pdf";
 [[CLDSession defaultSession] renameItem:item name:newName resultBlock:^(CLDItem *renamedItem) {
@@ -89,7 +89,7 @@ NSString *newName = @"new name.pdf";
 ```
  * Fetching a thumbnail (note ```CLDImage``` is just a ```#define``` for ```UIImage``` or ```NSImage```):
  
- ```
+ ``` Objective-C
 CLDItem *photo = [CLDItem itemWithPath:@"/Photos/teste.jpg"];
 [[CLDSession defaultSession] fetchThumbnailForItem:photo format:CLDItemThumbnailFormatJPEG size:CLDItemThumbnailSizeL cropToSize:NO resultBlock:^(CLDImage *thumbnail) {
             NSLog(@"Woohoo! Thumbnail!");
@@ -100,7 +100,7 @@ CLDItem *photo = [CLDItem itemWithPath:@"/Photos/teste.jpg"];
 
  * Downloading a file:
  
- ```
+ ``` Objective-C
 CLDItem *photo = [CLDItem itemWithPath:@"/Photos/teste.jpg"];
 [[CLDSession defaultSession] downloadItem:photo resultBlock:^(NSURL *fileURL) {
     NSLog(@"Downloaded file! URL: %@", fileURL);
@@ -110,8 +110,8 @@ CLDItem *photo = [CLDItem itemWithPath:@"/Photos/teste.jpg"];
 ```
 
 * Uploading a file:
-* 
- ```
+
+ ``` Objective-C
 NSURL *fileURL = [NSURL fileURLWithPath:@"/Users/hsousa/Library/Developer/CoreSimulator/Devices/53DB9174-6405-432E-AFF5-4C8BAA77C357/data/Containers/Data/Application/13DCDC8A-1C44-44E3-9A77-6C934F6B5C59/tmp/pt.meo.cloud.sdk.dl.samplex.B01FD282-C085-47A4-97AF-3C3BA4010E0E.tmp"];
 CLDItem *item = [CLDItem itemForUploadingWithURL:fileURL path:@"/_/uploaded bitch.jpg" revision:nil];
 [[CLDSession defaultSession] uploadItem:item shouldOverwrite:NO resultBlock:^(CLDItem *newItem) {
