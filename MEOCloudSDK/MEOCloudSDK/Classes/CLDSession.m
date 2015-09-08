@@ -227,6 +227,13 @@ static CLDSession *_defaultSession = nil;
         
         // validate callback URL block
         CLDSessionValidateCallbackURLBlock block = ^BOOL(NSURL *url){
+            
+            if (![[url scheme] isEqualToString:configuration.callbackURL.scheme] &&
+                ![[url host] isEqualToString:configuration.callbackURL.host] &&
+                ![[url path] isEqualToString:configuration.callbackURL.path]) {
+                return NO;
+            }
+                
             // fetch code
             for (NSString *param in [url.query componentsSeparatedByString:@"&"]) {
                 NSArray *elts = [param componentsSeparatedByString:@"="];
