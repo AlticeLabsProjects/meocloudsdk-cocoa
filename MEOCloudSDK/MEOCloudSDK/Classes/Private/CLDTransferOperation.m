@@ -440,6 +440,10 @@ static void *kCLDTransferOperationKVOContext = &kCLDTransferOperationKVOContext;
                 [self.transfer cancelWithError:[CLDError errorWithCode:CLDErrorCodeInvalidParameters]];
                 break;
                 
+            case 507:
+                [self.transfer cancelWithError:[CLDError errorWithCode:CLDErrorCodeOverQuota]];
+                break;
+                
             default: {
                 CLDSession *session = [CLDSession sessionWithIdentifier:self.transfer.sessionIdentifier];
                 CLDError *standardError = [session _errorFromStatusCode:response.statusCode error:nil];

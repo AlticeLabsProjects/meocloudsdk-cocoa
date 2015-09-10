@@ -381,8 +381,8 @@ totalBytesExpectedToTransfer:(int64_t)totalBytesExpectedToTransfer {
 
 - (void)cancelWithError:(NSError *)error {
     [self _cancelOperations];
-    self.state = CLDTransferStateFailed;
     self.error = error;
+    self.state = CLDTransferStateFailed;
 }
 
 - (void)cancel {
